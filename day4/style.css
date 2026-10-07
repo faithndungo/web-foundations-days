@@ -1,0 +1,93 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --btn-bg: #e0e0e0;
+    --btn-text: #333333;
+    --textarea-bg: #f9f9f9;
+    --textarea-border: #cccccc;
+}
+
+body.dark {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --btn-bg: #444444;
+    --btn-text: #f0f0f0;
+    --textarea-bg: #333333;
+    --textarea-border: #666666;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background-color: var(--textarea-bg);
+    color: var(--text-color);
+    border: 1px solid var(--textarea-border);
+    padding: 0.5rem;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.counters {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.9rem;
+}
+
+.counters p {
+    margin: 0;
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Character counter classes */
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
